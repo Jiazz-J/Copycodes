@@ -85,8 +85,11 @@ public class CreateProfile extends HttpServlet {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","u_","hello");
+			//Statement st=con.createStatement();
 			Statement st=con.createStatement();
-			String 
+			String url1="insert into personal values('"+id+"','"+name+"','"+date1+"','"+gender+"','"+marital+"','"+mail+"','"+address+"')";
+			String url2="insert into work values('"+designation+"','"+ctc+"','"+location+"','"+r_location+"','"+experience+"','"+tier+"','"+id+"')";
+			String url3="insert into education values('"+
 			
 			
 			
