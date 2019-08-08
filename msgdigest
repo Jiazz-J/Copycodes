@@ -1,0 +1,12 @@
+ try {
+      MessageDigest md=MessageDigest.getInstance("SHA-256");
+      String msg="hello";
+      byte[] barr=msg.getBytes();
+      byte[] enc=md.digest(barr);
+      System.out.println(enc);
+      String c=new String(enc);
+      System.out.println(c);
+      }
+      catch(Exception e){
+          e.printStackTrace();
+      }
