@@ -1,0 +1,7 @@
+ create table personal(id references emp_login(id),name varchar(20),dob date,gender char(1),marital char(1),mobile number(10),email varchar(25),address varchar(30),image varchar(30));
+ 
+ create table work(id references emp_login(id),designation varchar(20),ctc number(10),C_location varchar(20),r_location varchar(20),experience number(2),tier varchar(6),skills varchar(60));
+
+create table projects(id references emp_login(id),title varchar(20),startdate date,enddate date,description varchar(50));
+
+create table education(id references emp_login(id),Stage varchar(28),name varchar(29),course varchar(20),percentage number(2),pass date);
