@@ -5,3 +5,19 @@
 create table projects(id references emp_login(id),title varchar(20),startdate date,enddate date,description varchar(50));
 
 create table education(id references emp_login(id),Stage varchar(28),name varchar(29),course varchar(20),percentage number(2),pass date);
+
+
+SQL> desc adm_login;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL VARCHAR2(10)
+ PASSWORD                                           VARCHAR2(60)
+ DESIGNATION                                        VARCHAR2(2)
+ 
+ 
+ desc emp_login;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL VARCHAR2(10)
+ PASSWORD                                           VARCHAR2(50)
+ STATUS                                             NUMBER(1)
